@@ -4,50 +4,55 @@ export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "Stock Market Investment Simulator",
+      title: "Personal Project",
       img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
+        "assets/stock.jpg",
+      icon: "assets/git.png",
+      link: "https://github.com/MankaranRooprai/StockMarketInvestmentSimulation",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Paper-trading Java application that utilizes YahooFinance API to fetch real-time stock market data to users to buy/sell shares based on live bid/ask prices.",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Weather Comparison Application",
+      title: "Personal Project",
       img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
+        "assets/weather.jpg",
+      icon: "assets/git.png",
+      link: "https://github.com/MankaranRooprai/weather-app",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Weather comparison application built in python that allows users to compare temperatures across different cities by utilizing the OpenWeatherMap API to fetch live temperature data, and display results on a scatter plot used python's Matplotlib library.",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
+      name: "Plutus",
+      title: "Hack the North",
       img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
+        "assets/plutus.jpg",
+      icon: "assets/git.png",
+      link: "https://github.com/MankaranRooprai/plutus",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+        "Adaptive, responsive, and modern single-page budget tracker webapp built in react.js to allow students to track their expenses.",
     },
   ];
   return (
     <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+      <h1>Projects</h1>
       <div className="container">
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>
             <div className="top">
-              <img src="assets/right-arrow.png" className="left" alt="" />
-              <img
-                className="user"
-                src={d.img}
-                alt=""
-              />
-              <img className="right" src={d.icon} alt="" />
+              <a href={d.link} target="_blank" rel="noreferrer">
+                <img src="assets/right-arrow.png" className="left" alt="" />
+                <img
+                  className="user"
+                  src={d.img}
+                  alt=""
+                />
+                <img className="right" src={d.icon} alt="" />
+              </a>
             </div>
             <div className="center">
               {d.desc}
