@@ -104,6 +104,12 @@
                 animation: arrowBlink 2s infinite;
             }
 
+            @include mobile{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
             @keyframes arrowBlink {
                 100%{
                     opacity: 0;
