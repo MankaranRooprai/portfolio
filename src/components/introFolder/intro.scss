@@ -105,7 +105,13 @@
             }
 
             @include mobile{
-                left: 50%;
+                justify-content: center;
+                align-content: center;
+                align-self: center;
+                left: 45%;
+                padding-left: 0px;
+                margin-left: 0px;
+                //left: 0%;
             }
 
             @keyframes arrowBlink {
