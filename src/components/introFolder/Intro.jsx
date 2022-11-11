@@ -27,7 +27,7 @@ export default function Intro() {
           <h1>Mankaran Rooprai</h1>
           <h3>Software <span ref={textRef}></span></h3>
         </div>
-        <a href="#testimonials">
+        <a href="#h1align">
           <img src="assets/down.png" alt="" />
         </a>
       </div>

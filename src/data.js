@@ -1,11 +1,9 @@
-import "./weather.jpg"
-
 export const featuredPortfolio = [
     {
       id: 1,
       title: "Stock Market Investment Simulator",
       img:
-        "./weather.jpg",
+      "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
     },
     {
       id: 2,
