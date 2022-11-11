@@ -23,7 +23,7 @@
   }
 
   p {
-    padding: 30px 30px 30px 30px;
+    //margin-left: 50px;
   }
 
   .portfolio {
@@ -46,6 +46,7 @@
     }
 
     .left {
+      padding: 0 100px 0 100px;
       flex: 0.5;
       float: left;
       //position: relative;
