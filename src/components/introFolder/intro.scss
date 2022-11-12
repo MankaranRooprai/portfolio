@@ -105,6 +105,7 @@
             }
 
             @include mobile{
+                display: none;
                 justify-content: center;
                 align-content: center;
                 align-self: center;
